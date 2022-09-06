@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+}
+
+button {
+  background-color: #242222;
+  color: #fff;
+  border: 0;
+  padding: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.note-editor {
+  border-left: 5px solid #00000020;
+  padding: 20px;
+  min-height: 100vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-editor .note-editor--title {
+  margin: 20px 0;
+  font-size: 2em;
+}
+
+.note-editor--body {
+  font-size: 16px;
+  min-height: 100vh;
+  /* border: 2px solid #000; */
+  height: 100%;
+}
+
+textarea, .textarea {
+  display: block;
+  resize: none;
+  /* border: 2px solid #000; */
+  border: 0;
+  width: 100%;
+  outline: none;
+  overflow: hidden;
+  resize:none;
+}
+
+.note-preview {
+  padding: 20px 0;
+  font-size: 14px;
+  width: 240px;
+  max-width: 240px;
+}
+
+.note-preview h1 {
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.date {
+  align-self: flex-end;
+  font-style: italic;
+  font-size: 11px;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.note p {
+  opacity: 90%;
+}
+
+.note--short-body {
+  padding: 5px 0;
+  font-size: 12px;
+}
+
+.add-note-btn {
+  position: fixed;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  padding: 0;
+  bottom: 50px;
+  right: 50px;
+}
+
+.active {
+  background-color: #242222;
+  color: #fff;
+}
+
+
+.note-editor--controls {
+  display: flex;
+  gap: 1em;
+}
+
+.no-notes {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-notes h4 {
+  padding: 15px 0;
+  color: #00000080;
+  width: 250px;
+  text-align: center;
+}
